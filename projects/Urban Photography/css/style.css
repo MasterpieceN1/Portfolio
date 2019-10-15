@@ -1,0 +1,697 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html{
+	background-color:#C0C0C0;
+}
+body{
+	margin:0px auto;
+	background-color:white;
+	width:90%;
+}
+@media only screen and (min-width:990px){
+	
+body{
+	max-width:1280px;
+}
+header{
+	background-color:#5D5B71;
+	display:flex;
+	justify-content: space-between;
+	background-image:url(../images/desolve_logo.png);
+	background-repeat:no-repeat;
+	background-position:4% center;
+	padding:40px 30px 40px 155px;
+	align-items: center;
+	color:white;
+	width:100%;
+	box-sizing:border-box;  
+}
+header h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+header h2{
+	padding-left:4%;
+	font-family: 'Poiret One', cursive;
+}
+nav ul{
+	display:flex;
+	text-align:center;
+	list-style-type: none;
+	justify-content:space-around;
+	width:100%;
+	padding:20px 10px 30px 4%;
+	text-transform:uppercase;
+	box-sizing: border-box;
+	
+}
+nav ul li em{
+	display:block;
+	text-transform:lowercase;
+	padding-top:5px;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#4D4341;
+	display:block;
+	background-repeat:no-repeat;
+	padding:10px 10px 10px 20px; 
+}
+nav ul li:first-of-type a{
+	background-image:url(../images/gallery_icon_25.gif);
+	background-position:0px 10px;
+}
+nav ul li:nth-of-type(2) a{
+	background-image:url(../images/gear_25.png);
+	background-position:30px 10px;
+}
+nav ul li:nth-of-type(3) a{
+	background-image:url(../images/interact_25.png);
+	background-position:50px 10px;
+}
+nav ul li:nth-of-type(4) a{
+	background-image:url(../images/shop_25.png);
+	background-position:0px 10px;
+}
+nav + section{
+	background-image:url(../images/banner.jpg);
+	height:350px;
+	display:flex;
+	justify-content:space-between;
+}
+nav + section p{
+	background-color:rgba(89,87,109,0.8);
+	width:24%;
+	color:white;
+	padding:15px;
+	box-sizing:border-box;
+	text-align:justify;
+}
+nav + section h2{
+	color:white;
+	padding:20px 20px 20px 4%;
+	text-shadow: 2px 2px black;
+	font-family: 'Forum', cursive;
+}
+
+
+main{
+	display:flex;
+	justify-content:space-between;
+	margin-top:50px;
+	
+}
+main section{
+	width:70%;
+	margin-left:4%;
+
+}
+main section article{
+	position:relative;
+}
+main section h1{
+	border-bottom:1px solid #4C4240;
+	color:#4C4240;
+	padding-top:20px;
+	margin-bottom:50px;
+	background-image:url(../images/gallery_icon_50.gif);
+	background-position:right 5px;
+	background-repeat:no-repeat;
+}
+main article h2{
+	font-size:36px;
+}
+time{
+	position:absolute;
+	right:0px;
+	top:15px;
+}
+main section div{
+	height:250px;
+	margin-top:15px;
+}
+main section div.philadelphia{
+	background-image:url(../images/Philadelphia.jpg);
+}
+
+
+main section div.xc{
+	background-image:url(../images/chicago_banner.jpg);
+}
+main section div.Newyork{
+	background-image:url(../images/nyc_banner.jpg);
+}
+main section div + p{
+	padding-bottom:5px;
+	margin:20px 0;
+	border-bottom:2px solid black;
+}
+
+aside{
+	width:20%;
+	margin-left:2%;
+	margin-right:4%;
+}
+
+.special-div h2{
+	transition: 0.5s;
+}
+
+.special-div:hover h2{
+	transform: scale(1.1);
+}
+aside h1{
+	margin:10px 0px;
+	text-align:center;
+}
+aside h2{
+	padding:10px;
+	text-align:center;
+}
+aside ul{
+	list-style-type: none;
+}
+aside ul li a{
+	text-decoration:none;
+	color:#524B49;
+	display:block;
+	padding:5px;
+}
+aside ul li:nth-child(odd) a{
+	background-color:#B0ADBE;
+}
+aside ul li:nth-child(even) a{
+	background-color:#E6E4EF;
+}
+
+aside ul li a:hover{
+	background-color:gray;
+	text-decoration:underline;
+}
+aside select{
+	display:none;
+}
+aside img{
+	padding-bottom:20px;
+	display:block;
+	margin:0 auto;
+}
+
+p.prop{
+	position:relative;
+	top:-10px;
+	right:-5px;
+	
+}
+h3:last-of-type{
+	margin-top:10px;
+	margin-left:35px;
+	text-align:center;
+}
+footer{
+	background-color:#565469;
+	color:white;
+	position:relative;
+	padding:30px 4%;
+}
+
+footer label{
+	display:block;
+	padding-bottom:20px;
+	font-size:20px;
+	color:white;
+}
+input{
+	:none;
+}
+input:active{
+	:none;
+}
+#search{
+	padding:5px;
+	border-radius:3px;
+}
+#search + input{
+	border-radius:3px;
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+	padding:5px 10px;
+
+}
+#search + input{
+	background:linear-gradient(#BFBDD2, #ECEAF3, #BFBDD2);
+}
+forma input[type="search"]{
+	background-color:gray;
+}
+footer a{
+	color:white;
+	text-decoration:none;
+	display:block;
+	padding:30px 0px 30px 100px;
+	background-image:url(../images/tweet_90.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	right:4%;
+	top:20px;
+}
+footer p{
+	
+	text-align:right;
+	padding-top:20px;
+
+}
+}
+@media only screen and (max-width:989px) and (min-width:768px){
+	body{
+		width:90%;
+		
+	}
+header{
+	background-color:#6A677A;
+	display:flex;
+	justify-content:center;	
+}
+header h1{
+	color:white;
+	background-image:url(../images/desolve_logo.png);
+	background-repeat:no-repeat;
+	:1px solid red;
+	padding:40px 20px 40px 110px;
+	background-position:0px center;
+}
+header h2{
+	display:none;
+}
+
+nav ul{
+	display:flex;
+	list-style:none;
+	justify-content:space-around;
+}
+nav ul li a{
+	padding:30px 15px 30px 30px;
+	margin-bottom:20px;
+	text-decoration:none;
+	color:#4C4241;
+	display:block;
+	font-size:20px;
+}
+nav ul li em{
+	display:none;
+}
+nav ul li:first-of-type a{
+	background-image:url(../images/gallery_icon_25.gif);
+	background-repeat:no-repeat;
+	background-position:50px 55px;
+}
+nav ul li:nth-of-type(2) a{
+	background-image:url(../images/gear_25.png);
+	background-repeat:no-repeat;
+	background-position:40px 55px;
+}
+nav ul li:nth-of-type(3) a{
+	background-image:url(../images/interact_25.png);
+	background-repeat:no-repeat;
+	background-position:45px 55px;
+}
+nav ul li:nth-of-type(4) a{
+	background-image:url(../images/shop_25.png);
+	background-repeat:no-repeat;
+	background-position:40px 55px;
+}
+nav + section{
+	background-image:url(../images/banner-sm.jpg);
+	height:250px;
+	display:flex;
+	position:relative;
+	justify-content:center;
+	align-items:flex-end;
+	
+}
+nav + section h2{
+	color:white;
+	padding-bottom:30px;
+	font-family: 'Spectral SC', serif;
+	font-size:30px;
+	text-shadow:2px 2px black;
+}
+
+nav + section p{
+	width:50%;
+	margin:0px auto;
+	position:absolute;
+	top:270px;
+	text-align:center;
+}
+
+main section{
+	margin-top:170px;
+	margin-left:4%;
+	margin-right:4%;
+}
+main section article{
+	overflow:hidden;
+	margin-top:30px;
+	border-bottom:2px solid black;
+	padding-bottom:15px;
+}
+main section h1{
+	font-size:30px;
+	font-weight:lighter;
+	border-bottom:2px solid black;
+	background-image:url(../images/gallery_icon_50.gif);
+	background-repeat:no-repeat;
+	background-position:right 5px;
+	padding:10px 0px 5px 10px;
+}
+main section h2{
+	font-size:36px;
+}
+main section time{
+	display:inline-block;
+	margin-top:10px;
+	margin-bottom:40px;
+}
+main section article div{
+	float:right;
+	width:60%;
+	background-image:url(../images/philadelphia_sm.jpg);
+	height:175px;
+}
+section article:nth-of-type(2) div{
+	background-image:url(../images/sm_chicago_banner.jpg);
+}
+section article:nth-of-type(3) div{
+	background-image:url(../images/sm_nyc_banner.jpg);
+}
+aside{
+	margin-left:4%;
+	margin-right:4%;
+	overflow:hidden;
+	position:relative;
+}
+aside h1{
+	font-weight:lighter;
+	padding:20px 20px 20px 0px;
+	display:inline-block;
+}
+aside ul{
+	display:none;
+}
+aside select{
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+	padding:3px 50px;
+}
+aside h2{
+	font-weight:lighter;
+	padding:10px 0px;
+	border-top:2px solid black;
+	margin-top:10px;
+}
+aside p:first-of-type{
+	float:right;
+	width:65%;
+}
+aside input{
+	padding:5px 10px;
+	font-size:16px;
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+	margin-top:15px;
+}
+aside img:nth-of-type(2){
+	float:left;
+	padding-bottom:20px;
+}
+aside p:last-of-type{
+	display:inline;
+	padding-left:10px;
+}
+footer a{
+	background-image:url(../images/tweet_90.png);
+	background-repeat:no-repeat;
+}
+footer{
+	background-color:#565469;
+	color:white;
+	position:relative;
+	padding:30px 4%;
+}
+
+footer label{
+	display:block;
+	padding-bottom:20px;
+	font-size:20px;
+	color:white;
+}
+input{
+	:none;
+}
+input:active{
+	:none;
+}
+#search{
+	padding:5px;
+	border-radius:3px;
+}
+#search + input{
+	border-radius:3px;
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+	padding:5px 10px;
+
+}
+#search + input{
+	background:linear-gradient(#BFBDD2, #ECEAF3, #BFBDD2);
+}
+forma input[type="search"]{
+	background-color:gray;
+}
+footer a{
+	color:white;
+	text-decoration:none;
+	display:block;
+	padding:30px 0px 30px 100px;
+	background-image:url(../images/tweet_90.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	right:4%;
+	top:20px;
+}
+footer p{
+	
+	text-align:right;
+	padding-top:20px;
+
+}
+
+}
+@media only screen and (max-width:767px){
+	
+body{
+	background-color:white;
+	width:100%;
+	min-width:300px;
+}
+header{
+	background-color:#6A677A;
+	display:flex;
+	width:100%;
+	box-sizing: border-box; 
+	justify-content:center;	
+}
+header h1{
+	color:white;
+	background-image:url(../images/desolve_logo.png);
+	background-repeat:no-repeat;
+	:1px solid red;
+	padding:40px 20px 40px 110px;
+	background-position:0px center;
+}
+header h2{
+	display:none;
+}
+nav ul{
+	display:flex;
+	flex-wrap:wrap; 
+	list-style:none;
+	justify-content:space-around;
+	box-sizing:border-box; 
+}
+nav ul li a{
+	padding:10px 10px 40px 10px;
+	margin-bottom:20px;
+	text-decoration:none;
+	color:#4C4241;
+	display:block;
+	font-size:20px;
+	border:1px solid red;
+}
+nav ul li em{
+	display:none;
+}
+nav ul li:first-of-type a{
+	background-image:url(../images/gallery_icon_50.gif);
+	background-repeat:no-repeat;
+	background-position:30px 30px;
+	
+}
+nav ul li:nth-of-type(2) a{
+	background-image:url(../images/gear_50.png);
+	background-repeat:no-repeat;
+	background-position:15px 30px;
+}
+nav ul li:nth-of-type(3) a{
+	background-image:url(../images/interact_50.png);
+	background-repeat:no-repeat;
+	background-position:20px 30px;
+}
+nav ul li:nth-of-type(4) a{
+	background-image:url(../images/shop_50.png);
+	background-repeat:no-repeat;
+	background-position:10px 30px;
+}
+nav + section{
+	margin:0 4%;
+}
+nav + section h2{
+	text-align:center;
+	color:#4D4646;
+}
+nav + section p{
+	text-align:justify;
+	margin-bottom:40px;
+}
+main{
+	margin-left:4%;
+	margin-right:4%;
+}
+main section h1{
+	font-size:30px;
+	font-weight:lighter;
+	border-bottom:2px solid black;
+	background-image:url(../images/gallery_icon_50.gif);
+	background-repeat:no-repeat;
+	background-position:right 5px;
+	padding:10px 0px 5px 10px;
+	
+}
+main section h2{
+	font-weight:lighter;
+}
+main section article{
+	margin:20px 0;
+}
+main section article time{
+	padding-top:10px;
+	padding-bottom:5px;
+	display:inline-block;
+}
+main section article div{
+	
+	background-image:url(../images/philadelphia_sm.jpg);
+	height:175px;
+}
+main section article p{
+	border-bottom:2px solid black;
+	padding:10px 0px;
+}
+section article:nth-of-type(2) div{
+	background-image:url(../images/sm_chicago_banner.jpg);
+}
+section article:nth-of-type(3) div{
+	background-image:url(../images/sm_nyc_banner.jpg);
+}
+aside{
+	position:relative;
+}
+aside ul{
+	display:none;
+}
+aside h1{
+	text-align:center;
+}
+aside h2{
+	text-align:center;
+	margin:20px 0px 0px 0px;
+	padding-top:10px;
+	border-top:2px solid black;
+	
+}
+aside select{
+	margin:0 auto;
+	width:30%;
+	display:block;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-weight:lighter;
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+}
+aside img{
+	width:200px;
+	margin:0 auto;
+	display:block;
+	padding:10px;
+}
+aside p:first-of-type{
+	padding-bottom:10px;
+}
+aside input{
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+	padding:5px 5px;
+	border-radius:3px;
+}
+aside p:last-of-type{
+	padding-bottom:5px;
+	
+}
+footer{
+	background-color:#565469;
+	color:white;
+	position:relative;
+	padding:30px 4%;
+}
+
+footer label{
+	display:block;
+	padding-bottom:20px;
+	font-size:20px;
+	color:white;
+}
+input{
+	:none;
+}
+input:active{
+	:none;
+}
+#search{
+	padding:5px;
+	border-radius:3px;
+}
+#search + input{
+	border-radius:3px;
+	background:linear-gradient(#ECEAF3, #BFBDD2, #ECEAF3);
+	padding:5px 10px;
+
+}
+#search + input{
+	background:linear-gradient(#BFBDD2, #ECEAF3, #BFBDD2);
+}
+forma input[type="search"]{
+	background-color:gray;
+}
+footer a{
+	display:block;
+	color:white;
+	text-decoration:none;
+	margin-top:20px;
+	padding:30px 0px 40px 100px;
+	background-image:url(../images/tweet_90.png);
+	background-repeat:no-repeat;
+	
+	
+}
+footer p{
+	
+
+}
+}

@@ -1,0 +1,301 @@
+header nav {
+  width: 90%;
+  max-width: 1980px;
+  margin: auto; }
+
+body {
+  font-family: 'Srisakdi', cursive; }
+
+header {
+  height: 65px;
+  z-index: 100;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s; }
+  header .LogIn-container {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 325px;
+    height: 350px;
+    z-index: 100;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    visibility: hidden; }
+    header .LogIn-container span {
+      position: absolute;
+      top: 15px;
+      left: 85%;
+      width: 30px;
+      height: 30px;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer; }
+      header .LogIn-container span:active {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        box-shadow: 0 0 20px crimson; }
+    header .LogIn-container i {
+      font-size: 45px; }
+    header .LogIn-container form input {
+      display: inline-block;
+      margin: 10px 0; }
+    header .LogIn-container form input:last-of-type {
+      display: inline-block;
+      width: 100px;
+      margin-left: 60%;
+      font-weight: bold; }
+    header .LogIn-container a {
+      color: black; }
+      header .LogIn-container a:hover {
+        text-decoration: none; }
+  header .SignUp-container {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 325px;
+    height: 300px;
+    overflow: scroll;
+    z-index: 100;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    visibility: hidden; }
+    header .SignUp-container span {
+      position: absolute;
+      top: 15px;
+      left: 85%;
+      width: 30px;
+      height: 30px;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer; }
+      header .SignUp-container span:active {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        box-shadow: 0 0 20px crimson; }
+    header .SignUp-container i {
+      font-size: 45px; }
+    header .SignUp-container form input {
+      display: inline-block;
+      margin: 10px 0; }
+    header .SignUp-container form input:last-of-type {
+      display: inline-block;
+      width: 100px;
+      margin-left: 60%;
+      font-weight: bold; }
+    header .SignUp-container a {
+      color: black; }
+      header .SignUp-container a:hover {
+        text-decoration: none; }
+  header nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0; }
+    header nav ul {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap; }
+      header nav ul li::before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        bottom: -15px;
+        margin: auto;
+        width: 0;
+        border-bottom: 2px solid #BEA373;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s; }
+      header nav ul .job-recruitment:hover p {
+        visibility: visible; }
+      header nav ul .job-recruitment p {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1100;
+        color: white;
+        background-color: #302825;
+        padding: 5px;
+        visibility: hidden; }
+      header nav ul li:last-of-type {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s; }
+      header nav ul li {
+        padding: 0 15px;
+        font-size: 20px;
+        text-align: center;
+        position: relative; }
+        header nav ul li:hover::before {
+          width: 100%;
+          left: 0; }
+        header nav ul li a {
+          color: black;
+          font-weight: bold;
+          position: relative;
+          padding: 5px; }
+          header nav ul li a:hover::before {
+            width: 100%; }
+
+.carousel-container .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='AntiqueWhite ' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2); }
+.carousel-container .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='AntiqueWhite ' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2); }
+.carousel-container .carousel-indicators li {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 15px;
+  height: 30px; }
+.carousel-container .carousel-inner .carousel-item img {
+  height: 100vh; }
+.carousel-container .carousel-inner .carousel-item .carousel-caption {
+  top: 30%;
+  border: 4px solid white;
+  width: 450px;
+  height: 180px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%; }
+  .carousel-container .carousel-inner .carousel-item .carousel-caption h3 {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+
+.heightToggle {
+  height: 250px; }
+
+.visibillityToggle {
+  visibility: visible !important; }
+
+.transform {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5); }
+
+.fontweight {
+  font-weight: bold; }
+
+@media (min-width: 993px) {
+  header nav ul li:hover a {
+    color: darksalmon;
+    cursor: pointer; }
+  header nav ul li a:hover {
+    box-shadow: inset 0 0 10px grey;
+    color: darksalmon;
+    text-decoration: none; }
+  header nav ul:first-of-type {
+    justify-content: space-between; }
+    header nav ul:first-of-type li:last-of-type {
+      display: none; } }
+@media (max-width: 992px) {
+  header .LogIn-container {
+    left: 20px;
+    font-size: 18px; }
+    header .LogIn-container span {
+      display: block; }
+  header .SignUp-container {
+    left: 20px; }
+  header nav ul li a:hover {
+    text-decoration: none;
+    color: black; }
+  header nav ul li::before {
+    display: none; }
+  header nav ul .job-recruitment p {
+    display: none; }
+  header nav ul:first-of-type {
+    width: 100%;
+    justify-content: space-between; }
+    header nav ul:first-of-type i {
+      cursor: pointer; }
+  header nav ul:last-of-type {
+    flex-direction: column;
+    text-align: justify; } }
+
+/*# sourceMappingURL=style.css.map */

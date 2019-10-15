@@ -1,0 +1,450 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+header{
+	border-bottom: 1px solid #D1D1D1;
+}
+header nav {
+	width: 80%;
+	margin: auto;
+	max-width: 1200px;
+	display: flex;
+	padding: 20px 0;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box; 
+	/*background-color: grey;*/
+}
+.bar{
+	display: none;
+}
+
+.logo{
+	width: 250px;
+}
+.logo img{
+	width: inherit;
+}
+
+.menu,
+.start-menu,
+.end-menu{
+	display: flex;
+	flex-wrap:wrap;
+}
+.menu{
+	width: 100%;
+	justify-content: space-between;
+}
+
+.start-menu,
+.end-menu{
+	align-items: center;
+	justify-content: center;
+}
+.start-menu li,
+.end-menu li{
+	padding: 0 5px;
+}
+
+.start-menu li a{
+	color: black;
+	font-size: 15px;
+	font-weight:bold; 
+	font-family: verdana;
+}
+.start-menu li a:hover{
+	color: #F4A82F
+}
+
+.line{
+	font-size: 12px;
+	color: #CACACA;
+	user-select: none;
+}
+
+.end-menu{
+	background-color: #F3F3F3;
+	padding: 2px 5px;
+	border-radius: 10px;
+}
+
+.end-menu li a{
+	color: #8D8D8D;
+	font-size: 8px;
+	font-family: verdana;
+}
+
+.end-menu .line{
+	font-size: 8px
+}
+
+@media(min-width: 992px){
+
+.carousel-container{
+	transition:.5s;
+	overflow: hidden;
+	position: relative;
+	height: 200px;	
+	}
+
+}
+
+.carousel-container ul li a img{
+	width:100%;
+}
+
+.carousel-point{
+	position: absolute;
+	right:0;
+	left:0;
+	bottom:30px;
+	text-align: center;
+}
+
+.carousel-point a{
+	width:10px;
+	height:10px;
+	background-color: white;
+	border-radius:50%;
+	display:inline-block;  
+}
+
+.figure-slider{
+	position: relative;
+	background-image: url(../images/video_bg01.png);
+}
+
+.figure-slider h1{
+	width: 80%;
+	max-width: 1200px; 
+	margin:auto;
+	padding:55px 0 5px 0; 
+}
+
+.figure-slider a{
+	display:block; 
+}
+
+.figure-slider a h4:nth-of-type(odd){
+	color:yellow;
+}
+
+.figure-slider a h4:nth-of-type(even){
+	color:grey;
+}
+
+.notifyer{
+	position: relative;
+	display:flex;
+	flex-wrap: nowrap;
+	width:80%;
+	max-width:1200px;
+	margin:auto;  
+}
+
+ .btn-up{
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	left:9%;
+	top: -33px;
+	background-color:black;
+	border-radius:30px;
+	text-align: center;
+	line-height:65px;
+	color:white;
+	font-size: 25px;
+	transition:0.5s;     
+}
+
+@media(max-width: 991px){
+	.btn-up{
+		visibility: hidden;
+	}
+}
+
+figure a img{
+	width:100%;
+}
+
+.notifyer figure a div{
+	background-color: white;
+}
+
+.a1,
+.a2{
+	position:absolute;
+	font-size:60px;
+	color:#F3AE42;  
+}
+
+.a1{
+	left:-8%;
+	top:30%;
+}
+
+.a2{
+	top:30%;
+	right:-8%;
+}
+
+.notice-container{
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #969696;
+}
+
+.notice-con{
+	width:80%;
+	padding: 10px 0;
+	max-width: 1200px;
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+}
+
+.notice-con div ul li a{
+	white-space: nowrap;
+	color:#878787;
+	font-size:14px; 
+}
+
+.div-special{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.div-special div:first-of-type{
+	background:url(../images/audition_bg01.png)repeat-y left top;
+	margin-right: 20px; 
+}
+
+.div-special div:last-of-type{
+	padding-top: 5px;
+}
+
+footer{
+	margin-top:50px;
+}
+
+.footer-container{
+	width:79%;
+	height:100px; 
+	margin:0 auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;   
+}
+
+.footer-container a,p{
+	font-size:11px;
+	padding:0 5px;
+	color:#A5A5A5;  
+}
+
+.footer-container div:first-of-type{
+	width:630px;
+	padding:10px 5px  
+}
+
+.footer-container div:first-of-type img{
+	float:left;
+}
+
+.footer-container div:last-of-type{
+	width:200px; 
+}
+
+.footer-container div:last-of-type img{
+	width: 33px;
+	height: 33px;
+	display:inline-block;
+	padding-top:10px;  
+}
+
+@media(max-width: 1270px){
+	.start-menu{
+		order:2;
+	}
+	.end-menu{
+		order:1;
+		margin-left:auto;
+	}
+}
+
+@media(max-width:1201px){
+	.footer-container{
+		justify-content:center;
+		text-align: center; 
+	}
+
+	.footer-container p{
+		text-align: center;
+	}
+
+	.footer-container div:first-of-type img{
+		display:none; 
+	}
+
+	.footer-container div:first-of-type{
+		order:2;
+	}
+
+	.footer-container div:last-of-type{
+		order:1;
+	}
+}
+
+@media(max-width: 1069px){
+	.footer-div{
+		justify-content: center; 
+	}
+
+	.footer-div div:first-of-type img{
+		display:none; 
+	}
+
+	.footer-div div:first-of-type{
+		order:2;
+	}
+	
+	.footer-div div:first-of-type p{
+		display: none;
+	}
+
+	.footer-div div:last-of-type{
+		order:1;
+	}
+}
+@media(max-width: 911px){
+	.end-menu{
+		order:1;
+	}
+
+	.bar{
+		width:50%;
+		margin-bottom:15px;
+	}
+
+	.logo{
+		width: 50%;
+	}
+}
+
+@media (max-width: 736px){
+		
+	header{
+		background-color:#f4f4f4;
+		height: 60px;
+		border-top: 3px solid #F99400;  
+	}
+
+	header nav{
+		padding-top:10px; 
+	}
+
+	.logo a{
+		display: block;
+	}
+
+	.logo a{
+		width:105px;
+		height:60px;
+	}
+
+	.logo a img{
+		width:105px;
+		height:40px;
+	}
+
+	.btn-up{
+		display: none;
+	}	
+	
+	.carousel-point{
+		bottom:10px; 
+	}
+
+	ul.start-menu{
+		display:none; 
+	}
+
+	.bar{
+		display: block;
+		color: #F4A82F;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.end-menu{
+		display: none;
+	}
+	.start-menu .line{
+		display: none;
+	}
+	header nav{
+		flex-wrap: wrap;
+	}
+
+	.menu{
+		width: 100%;
+		justify-content: center;s
+	}
+	.start-menu{
+		width: 100%;
+		flex-direction: column;
+		margin-top: 10px;
+		border-top: 1px solid #D1D1D1;
+		padding: 10px 0;
+	}
+
+	.footer-div{
+		width:100%;
+		flex-wrap: wrap;
+		justify-content: center; 
+	}
+}
+
+
+/*-----------------------------------------------ClassList-toggles------------------------------------------*/
+	.variant{
+	display: block;
+	}	
+
+
+	.vr{
+		height:0px;
+		transition: .5s;
+	}
+
+	.rotate{
+		transform: rotate(180deg);
+	}
+/*-----------------------------------------------ClassList-toggles-end------------------------------------------*/
+
+@media(max-width: 991px){
+	.menu{
+		width: 1000px;
+		z-index: 100;
+		background-color:white; 
+	}
+}	
+
+@media(max-width: 376px){
+	.notice-con div ul li a{
+		font-size:11px; 
+	}
+}
+
+@media(max-width: 304px){
+	.notice-con div ul li a{
+		font-size:9px; 
+	}
+}

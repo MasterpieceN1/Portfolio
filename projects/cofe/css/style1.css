@@ -1,0 +1,169 @@
+*{
+	margin:0;
+	padding:0;
+	outline:0;
+	border:none;
+	text-decoration: none;  
+}
+
+body{
+	background: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed; 
+	box-sizing: border-box;
+	font-family: 'Lora', serif;
+}
+
+.box{
+	 margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: Raleway;
+}
+
+.box p{
+	color:#E6A756;
+	    font-size: 2rem;
+    font-weight: 800;
+}
+
+.box h1{
+	font-size: 5rem;
+    font-weight: lighter;
+    line-height: 4rem;
+    color:#FCFCFC;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.box1{
+	background-color: rgba(47,23,15,.9);
+    font-family: Raleway; 
+}
+
+.nav-item{
+	padding:20px 40px 20px 0; 
+}
+
+nav .nav-link:last-of-type{
+	display:block; 
+}
+
+nav .nav-link:last-of-type span{
+	display:none; 
+}
+
+nav .nav-link:last-of-type:hover{
+	position: relative;
+}
+
+nav .nav-link:last-of-type:hover span{
+	display: block;
+	position:absolute;
+	top:65px;
+	left:-15px;
+	width: 160px;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: rgba(47,23,15,.65);
+	z-index: 100; 
+}
+
+.box1 nav ul li a{
+	color:#C2BAB8;
+	font-weight: bold;
+	font-size:15px;
+	font-family: Raleway;  
+}
+
+.box1 nav ul li a:hover{
+	color:#ACA59A;
+}
+
+nav .nav-item.active .nav-link{
+	color:#E6A756;
+}
+
+.navbar-brand{
+	color:#E6A756;
+	font-weight: bold;
+}
+
+.navbar-brand:hover{
+	color:#E6A756;
+	text-decoration: none;
+}
+
+.navbar-toggler-icon{
+	background-image:url(../images/download.svg);
+}
+
+.box2 .row .col-12:first-of-type{
+	margin-top:50px;
+	margin-bottom: 20px;
+}
+
+.box2 .row .col-12:last-of-type div{
+	background-color: rgba(255,255,255,.85);
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+
+
+.box2 .row .col-12:last-of-type p{
+	width: 98%;
+	font-size: 
+}
+
+
+footer{
+	background-color: rgba(47,23,15,.9);
+	margin-top:50px;
+	color:grey;
+	padding: 50px 0;
+	font-size:14px;  
+}
+
+@media(min-width: 992px){
+		
+	.box2 .row{
+		position: relative;
+	}
+
+	.box2 .row .col-12:last-of-type{
+		position: absolute;
+		width:70%;
+		height: 300px;
+		bottom:-45%;
+		left:13%;
+		border-radius: 5px;
+
+	}
+
+	footer{
+		margin-top:23% !important;
+	}
+}
+
+@media(max-width: 991px){
+	.navbar-brand{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 991px){
+	.nav-item{
+		padding: 0;
+	}
+}
+
+
+
+@media(max-width: 290px){
+		
+	.navbar-brand{
+		font-size:13px;  
+	}	

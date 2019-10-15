@@ -1,0 +1,390 @@
+@mixin display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin transition {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+@mixin transform-translateY {
+    transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+    -moz-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    -o-transform: translateY(40%);
+}
+
+@mixin border-radius-10percent {
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+@mixin transformScale-Twice {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+
+@mixin border-radius-50percent {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@mixin transform-Scale {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+@mixin transformScaleBig {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+@mixin transform-left {
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+
+%content-worstka {
+    width: 90%;
+    max-width: 1980px;
+    margin: auto;
+}
+
+body {
+    font-family: 'Srisakdi', cursive;
+}
+
+header {
+    height: 65px;
+    z-index: 100;
+    @include transition();
+    .LogIn-container {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 325px;
+        height: 350px;
+        z-index: 100;
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        @include border-radius-10percent();
+        @include transition();
+        visibility: hidden;
+        span {
+            position: absolute;
+            top: 15px;
+            left: 85%;
+            width: 30px;
+            height: 30px;
+            color: white;
+            background-color: black;
+            @include border-radius-50percent();
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            &:active {
+                @include transform-Scale();
+                box-shadow: 0 0 20px crimson;
+            }
+        }
+        i {
+            font-size: 45px;
+        }
+        form {
+            input {
+                display: inline-block;
+                margin: 10px 0;
+            }
+            input:last-of-type {
+                display: inline-block;
+                width: 100px;
+                margin-left: 60%;
+                font-weight: bold;
+            }
+        }
+        a {
+            color: black;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .SignUp-container {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 325px;
+        height: 300px;
+        overflow: scroll;
+        z-index: 100;
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        @include border-radius-10percent();
+        @include transition();
+        visibility: hidden;
+        span {
+            position: absolute;
+            top: 15px;
+            left: 85%;
+            width: 30px;
+            height: 30px;
+            color: white;
+            background-color: black;
+            @include border-radius-50percent();
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            &:active {
+                @include transform-Scale();
+                box-shadow: 0 0 20px crimson;
+            }
+        }
+        i {
+            font-size: 45px;
+        }
+        form {
+            input {
+                display: inline-block;
+                margin: 10px 0;
+            }
+            input:last-of-type {
+                display: inline-block;
+                width: 100px;
+                margin-left: 60%;
+                font-weight: bold;
+            }
+        }
+        a {
+            color: black;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    nav {
+        @include display-flex();
+        @extend %content-worstka;
+        justify-content: space-between;
+        padding: 15px 0;
+        ul {
+            @include display-flex();
+            li::before {
+                content: "";
+                position: absolute;
+                left: -25px;
+                bottom: -15px;
+                margin: auto;
+                width: 0;
+                border-bottom: 2px solid #BEA373;
+                @include transition();
+            }
+            .job-recruitment {
+                &:hover p {
+                    visibility: visible;
+                }
+                p {
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    z-index: 1100;
+                    color: white;
+                    background-color: #302825;
+                    padding: 5px;
+                    visibility: hidden;
+                }
+            }
+            li:last-of-type {
+                cursor: pointer;
+                font-weight: bold;
+                @include transition();
+            }
+            li {
+                padding: 0 15px; // margin-right: 15px;
+                font-size: 20px;
+                text-align: center;
+                position: relative;
+                &:hover::before {
+                    width: 100%;
+                    left: 0;
+                }
+                a {
+                    color: black;
+                    font-weight: bold;
+                    position: relative;
+                    padding: 5px;
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carousel-container {
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='AntiqueWhite ' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+        @include transformScale-Twice();
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='AntiqueWhite ' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+        @include transformScale-Twice();
+    }
+    .carousel-indicators li {
+        @include border-radius-50percent();
+        height: 15px;
+        height: 30px;
+    }
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 100vh;
+            }
+            .carousel-caption {
+                top: 30%;
+                border: 4px solid white;
+                width: 450px;
+                height: 180px;
+                left: 50%;
+                @include transform-left();
+                font-weight: bold;
+                font-size: 25px;
+                color: black;
+                background-color: white;
+                text-align: center;
+                @include border-radius-10percent();
+                h3 {
+                    padding: 15px;
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// -----------------------------------------------toggles + animations + etc-----------------------------------------\\
+.heightToggle {
+    height: 250px;
+}
+
+.visibillityToggle {
+    visibility: visible !important;
+}
+
+.transform {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+}
+
+.fontweight {
+    font-weight: bold;
+}
+
+// -------------------------------------------------------------------------------------------------------------------\\
+@media(min-width:993px) {
+    header {
+        nav {
+            ul {
+                li {
+                    &:hover a {
+                        color: darksalmon;
+                        cursor: pointer;
+                    }
+                    a {
+                        &:hover {
+                            box-shadow: inset 0 0 10px grey;
+                            color: darksalmon;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            ul:first-of-type {
+                justify-content: space-between;
+                li:last-of-type {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:992px) {
+    header {
+        .LogIn-container {
+            left: 20px;
+            font-size: 18px;
+            span {
+                display: block;
+            }
+        }
+        .SignUp-container {
+            left: 20px;
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+                li::before {
+                    display: none;
+                }
+                .job-recruitment {
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            ul:first-of-type {
+                width: 100%;
+                justify-content: space-between;
+                i {
+                    cursor: pointer;
+                }
+            }
+            ul:last-of-type {
+                flex-direction: column;
+                text-align: justify;
+            }
+        }
+    }
+}

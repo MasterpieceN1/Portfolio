@@ -1,0 +1,120 @@
+body{
+	font-family: 'Abril Fatface', cursive;
+	font-size:18px; 
+}
+.row{
+	margin:0;
+	padding:0; 
+}
+header{
+	background-color:#252324;  
+}
+
+.navbar:hover{
+	text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#00BAC6;
+}
+.carousel-indicators ul{
+	list-style: square; 
+}
+.carousel-indicators li{
+	width:15px;
+	height:15px;
+	border-radius:25px;
+	background-color:rgba(238,238,238.7);
+	     
+}
+
+
+
+
+.card img{
+	height:200px;
+	transition:0.5s;  
+}
+
+.company-story{
+	height:0px;
+	overflow: hidden;
+	transition: 1.5s; 
+}
+
+.height{
+	height:1100px; 
+}
+
+
+.box{
+	padding-top:0; 
+	width: 0px;
+	height: 0px;
+	border: 50px solid transparent;
+	border-bottom-color: #EEEEEE;
+	margin: auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.box::after{
+	content: "About Us";
+    position: absolute;
+    left: -17px;
+    top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.box2{
+	padding:0;
+	margin:0;    
+}
+
+.carousel-item{
+	min-height:100px;
+	height: 500px;  
+}
+.carousel-item img{
+	height: inherit;
+}
+.sec2{
+	background-color:#EEEEEE; 
+}
+.card{
+	max-width: 450px;
+	margin: auto;
+}
+
+.carousel-indicators li{
+	background-color: transparent;
+	border:3px solid white;
+}
+.carousel-indicators .active{
+	background-color: #3D8CDC;
+}
+
+.dv1 img{
+	width:30px;
+	height:30px;  
+}
+
+@media(min-width: 992px){
+	img,h5,p{
+	transition: 0.5s;
+}
+
+.card:hover img{
+	transform: scale(1.1);
+}
+
+.card:hover h5{
+	transform: scale(1.1);
+	color:blue;
+}
+.card:hover p{
+	transform: scale(1.1);
+}
+}
