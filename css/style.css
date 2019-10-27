@@ -807,7 +807,7 @@ footer {
     .transition-link {
         transform-style: preserve-3d;
         transition: 0.8s;
-        padding-bottom: 5px;
+        padding-top: 10px;
     }
     .transition-link::after {
         top: -100%;
@@ -819,7 +819,7 @@ footer {
         transform-origin: left bottom;
         transform: rotateX(90deg);
         font-size: 14px;
-        padding-bottom: 7px;
+        padding: 11px 0 10px 0;
         text-align: center;
         color: #E7C58C;
     }
