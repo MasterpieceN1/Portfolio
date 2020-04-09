@@ -1,6 +1,8 @@
 .Page-Customisation {
     width: 250px;
-    max-height: 700px;
+    max-height: 550px;
+    height: 100%;
+    overflow: scroll;
     position: fixed;
     top: 50px;
     left: -250px;
@@ -123,6 +125,7 @@
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+    color: whitesmoke;
 }
 
 @media(max-width:992px) {
